@@ -2,7 +2,7 @@
 
 # This Python script was auto-generated using YODA v2.0.0.
 # Analysis object: /evtb/inc_tb_pt
-# Timestamp: 12-04-2024 (15:15:39)
+# Timestamp: 12-04-2024 (15:19:33)
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
@@ -29,7 +29,7 @@ xLims = (0.0, 7.0)
 yLims = (9e-07, 11.0)
 
 # TeX-friendly labels for the legend
-labels = [ r"Sherpa 10M Dalpha=0.1", r"OLTD" ]
+labels = [ r"Sherpa 10M Dalpha=0.01", r"OLTD" ]
 
 # Create figure and axis objects
 fig, (ax, ratio0_ax) = plt.subplots(2, 1, sharex=True,
