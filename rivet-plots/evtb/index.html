@@ -1,0 +1,311 @@
+<html>
+<head>
+<title>Plots from Rivet analyses &ndash; evtb</title>
+<style>
+          html { font-family: arial black, sans-serif; color: #333333; }
+          img { border: 0; }
+          a { text-decoration: none; font-weight: bold; }
+          footer { clear:both; margin-top:2em; margin-bottom:2em; padding-top:2em; color: #999999; }
+
+          .anasumm, .indexanasumm { margin-bottom: 2.5em; line-height: 1.4; font-size: 120%; font-family: georgia, palatino, serif; }
+          .back, .back a { font-weight: bold; color: gray; font-variant: small-caps; text-transform: uppercase; margin-bottom: 2em; }
+
+          .filterform { position: fixed; top: 1em; right: 1em; background: white; opacity: 0.2; }
+          .filterform { padding: 1em; padding-bottom: 0.1em; border: 2px solid gray; border-radius: 0.7em; }
+          .filterform:hover, .filterform:focus-within { opacity: 1.0; -webkit-transition: opacity 1s; transition: opacity 1s; drop-shadow(gray 0.5em 0.5em 10px); }
+          .filterpatt { padding: 0.3em; font-size: 100%; border: 1px solid #85C1E9; border-radius: 0.1em; }
+          .filterbutton { padding: 0.3em; font-size: 100%; border: 2px solid #85C1E9; background:#D6EAF8; border-radius: 0.3em; }
+        </style>
+                    <script type="text/javascript">
+              window.MathJax = { tex: { inlineMath: [['$','$']] }, 
+                                 options: { menuOptions: { settings: { inTabOrder: false } } } };
+            </script>
+            <script type="text/javascript" id="MathJax-script" async
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml-full.min.js">
+            </script>
+            
+
+            <script type="text/javascript">
+                function filterPlots(ana, patt) {
+                    var regex = new RegExp(patt);
+                    var sec = document.getElementById('ana_'+ana);
+                    var plots = sec.getElementsByClassName('plot');
+                    var i; for (i = 0; i < plots.length; ++i) {
+                        // var viz = (regex.test(plots[i].id)) ? 'visible' : 'hidden';
+                        // plots[i].style.visibility = viz;
+                        var dis = (regex.test(plots[i].id)) ? 'block' : 'none';
+                        plots[i].style.display = dis;
+                    }
+                    return false;
+               }
+            </script>
+            </head>
+<body>
+<section id="ana_evtb">
+<p class="back"><a href="../index.html" title="Return to index page">&larrhk; Index</a></p>
+<h2>evtb</h2>
+<div class="filterform"><form onsubmit="var patt = document.getElementById('patt_evtb').value; filterPlots('evtb', patt); return false;">
+<span><b>Filter plots:</b>&emsp;</span><input class="filterpatt" id="patt_evtb" type="search" accesskey="s" title="Filter: Alt+s">
+<input class="filterbutton" type="submit" value="Filter">
+</form></div>
+
+  <div class="plot" id="plot_cutEg_jb_e" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_jb_e">&#9875;</a><a href="cutEg_jb_e.py">&#8984;</a><a href="cutEg_jb_e__data.py">&#128202;</a> cutEg_jb_e:<br/>
+    <a name="evtb-cutEg_jb_e"><a href="cutEg_jb_e.pdf">
+      <img src="cutEg_jb_e.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_jb_pt" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_jb_pt">&#9875;</a><a href="cutEg_jb_pt.py">&#8984;</a><a href="cutEg_jb_pt__data.py">&#128202;</a> cutEg_jb_pt:<br/>
+    <a name="evtb-cutEg_jb_pt"><a href="cutEg_jb_pt.pdf">
+      <img src="cutEg_jb_pt.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_jb_y" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_jb_y">&#9875;</a><a href="cutEg_jb_y.py">&#8984;</a><a href="cutEg_jb_y__data.py">&#128202;</a> cutEg_jb_y:<br/>
+    <a name="evtb-cutEg_jb_y"><a href="cutEg_jb_y.pdf">
+      <img src="cutEg_jb_y.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_jbjg_deta" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_jbjg_deta">&#9875;</a><a href="cutEg_jbjg_deta.py">&#8984;</a><a href="cutEg_jbjg_deta__data.py">&#128202;</a> cutEg_jbjg_deta:<br/>
+    <a name="evtb-cutEg_jbjg_deta"><a href="cutEg_jbjg_deta.pdf">
+      <img src="cutEg_jbjg_deta.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_jbjg_dphi" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_jbjg_dphi">&#9875;</a><a href="cutEg_jbjg_dphi.py">&#8984;</a><a href="cutEg_jbjg_dphi__data.py">&#128202;</a> cutEg_jbjg_dphi:<br/>
+    <a name="evtb-cutEg_jbjg_dphi"><a href="cutEg_jbjg_dphi.pdf">
+      <img src="cutEg_jbjg_dphi.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_jbjg_dr" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_jbjg_dr">&#9875;</a><a href="cutEg_jbjg_dr.py">&#8984;</a><a href="cutEg_jbjg_dr__data.py">&#128202;</a> cutEg_jbjg_dr:<br/>
+    <a name="evtb-cutEg_jbjg_dr"><a href="cutEg_jbjg_dr.pdf">
+      <img src="cutEg_jbjg_dr.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_jg_e" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_jg_e">&#9875;</a><a href="cutEg_jg_e.py">&#8984;</a><a href="cutEg_jg_e__data.py">&#128202;</a> cutEg_jg_e:<br/>
+    <a name="evtb-cutEg_jg_e"><a href="cutEg_jg_e.pdf">
+      <img src="cutEg_jg_e.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_jg_pt" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_jg_pt">&#9875;</a><a href="cutEg_jg_pt.py">&#8984;</a><a href="cutEg_jg_pt__data.py">&#128202;</a> cutEg_jg_pt:<br/>
+    <a name="evtb-cutEg_jg_pt"><a href="cutEg_jg_pt.pdf">
+      <img src="cutEg_jg_pt.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_t_e" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_t_e">&#9875;</a><a href="cutEg_t_e.py">&#8984;</a><a href="cutEg_t_e__data.py">&#128202;</a> cutEg_t_e:<br/>
+    <a name="evtb-cutEg_t_e"><a href="cutEg_t_e.pdf">
+      <img src="cutEg_t_e.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_t_pt" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_t_pt">&#9875;</a><a href="cutEg_t_pt.py">&#8984;</a><a href="cutEg_t_pt__data.py">&#128202;</a> cutEg_t_pt:<br/>
+    <a name="evtb-cutEg_t_pt"><a href="cutEg_t_pt.pdf">
+      <img src="cutEg_t_pt.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_t_y" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_t_y">&#9875;</a><a href="cutEg_t_y.py">&#8984;</a><a href="cutEg_t_y__data.py">&#128202;</a> cutEg_t_y:<br/>
+    <a name="evtb-cutEg_t_y"><a href="cutEg_t_y.pdf">
+      <img src="cutEg_t_y.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_tjb_dphi" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_tjb_dphi">&#9875;</a><a href="cutEg_tjb_dphi.py">&#8984;</a><a href="cutEg_tjb_dphi__data.py">&#128202;</a> cutEg_tjb_dphi:<br/>
+    <a name="evtb-cutEg_tjb_dphi"><a href="cutEg_tjb_dphi.pdf">
+      <img src="cutEg_tjb_dphi.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_tjb_m" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_tjb_m">&#9875;</a><a href="cutEg_tjb_m.py">&#8984;</a><a href="cutEg_tjb_m__data.py">&#128202;</a> cutEg_tjb_m:<br/>
+    <a name="evtb-cutEg_tjb_m"><a href="cutEg_tjb_m.pdf">
+      <img src="cutEg_tjb_m.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_tjb_pt" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_tjb_pt">&#9875;</a><a href="cutEg_tjb_pt.py">&#8984;</a><a href="cutEg_tjb_pt__data.py">&#128202;</a> cutEg_tjb_pt:<br/>
+    <a name="evtb-cutEg_tjb_pt"><a href="cutEg_tjb_pt.pdf">
+      <img src="cutEg_tjb_pt.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_tjg_deta" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_tjg_deta">&#9875;</a><a href="cutEg_tjg_deta.py">&#8984;</a><a href="cutEg_tjg_deta__data.py">&#128202;</a> cutEg_tjg_deta:<br/>
+    <a name="evtb-cutEg_tjg_deta"><a href="cutEg_tjg_deta.pdf">
+      <img src="cutEg_tjg_deta.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_tjg_dphi" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_tjg_dphi">&#9875;</a><a href="cutEg_tjg_dphi.py">&#8984;</a><a href="cutEg_tjg_dphi__data.py">&#128202;</a> cutEg_tjg_dphi:<br/>
+    <a name="evtb-cutEg_tjg_dphi"><a href="cutEg_tjg_dphi.pdf">
+      <img src="cutEg_tjg_dphi.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_cutEg_tjg_dr" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-cutEg_tjg_dr">&#9875;</a><a href="cutEg_tjg_dr.py">&#8984;</a><a href="cutEg_tjg_dr__data.py">&#128202;</a> cutEg_tjg_dr:<br/>
+    <a name="evtb-cutEg_tjg_dr"><a href="cutEg_tjg_dr.pdf">
+      <img src="cutEg_tjg_dr.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc">&#9875;</a><a href="inc.py">&#8984;</a><a href="inc__data.py">&#128202;</a> inc:<br/>
+    <a name="evtb-inc"><a href="inc.pdf">
+      <img src="inc.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_incCut10" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-incCut10">&#9875;</a><a href="incCut10.py">&#8984;</a><a href="incCut10__data.py">&#128202;</a> incCut10:<br/>
+    <a name="evtb-incCut10"><a href="incCut10.pdf">
+      <img src="incCut10.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_incCut12" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-incCut12">&#9875;</a><a href="incCut12.py">&#8984;</a><a href="incCut12__data.py">&#128202;</a> incCut12:<br/>
+    <a name="evtb-incCut12"><a href="incCut12.pdf">
+      <img src="incCut12.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_incCut6" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-incCut6">&#9875;</a><a href="incCut6.py">&#8984;</a><a href="incCut6__data.py">&#128202;</a> incCut6:<br/>
+    <a name="evtb-incCut6"><a href="incCut6.pdf">
+      <img src="incCut6.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_incCut8" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-incCut8">&#9875;</a><a href="incCut8.py">&#8984;</a><a href="incCut8__data.py">&#128202;</a> incCut8:<br/>
+    <a name="evtb-incCut8"><a href="incCut8.pdf">
+      <img src="incCut8.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_incCutEg" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-incCutEg">&#9875;</a><a href="incCutEg.py">&#8984;</a><a href="incCutEg__data.py">&#128202;</a> incCutEg:<br/>
+    <a name="evtb-incCutEg"><a href="incCutEg.pdf">
+      <img src="incCutEg.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_incCutEt" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-incCutEt">&#9875;</a><a href="incCutEt.py">&#8984;</a><a href="incCutEt__data.py">&#128202;</a> incCutEt:<br/>
+    <a name="evtb-incCutEt"><a href="incCutEt.pdf">
+      <img src="incCutEt.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_jb_e" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_jb_e">&#9875;</a><a href="inc_jb_e.py">&#8984;</a><a href="inc_jb_e__data.py">&#128202;</a> inc_jb_e:<br/>
+    <a name="evtb-inc_jb_e"><a href="inc_jb_e.pdf">
+      <img src="inc_jb_e.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_jb_pt" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_jb_pt">&#9875;</a><a href="inc_jb_pt.py">&#8984;</a><a href="inc_jb_pt__data.py">&#128202;</a> inc_jb_pt:<br/>
+    <a name="evtb-inc_jb_pt"><a href="inc_jb_pt.pdf">
+      <img src="inc_jb_pt.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_jb_y" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_jb_y">&#9875;</a><a href="inc_jb_y.py">&#8984;</a><a href="inc_jb_y__data.py">&#128202;</a> inc_jb_y:<br/>
+    <a name="evtb-inc_jb_y"><a href="inc_jb_y.pdf">
+      <img src="inc_jb_y.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_jbjg_deta" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_jbjg_deta">&#9875;</a><a href="inc_jbjg_deta.py">&#8984;</a><a href="inc_jbjg_deta__data.py">&#128202;</a> inc_jbjg_deta:<br/>
+    <a name="evtb-inc_jbjg_deta"><a href="inc_jbjg_deta.pdf">
+      <img src="inc_jbjg_deta.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_jbjg_dphi" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_jbjg_dphi">&#9875;</a><a href="inc_jbjg_dphi.py">&#8984;</a><a href="inc_jbjg_dphi__data.py">&#128202;</a> inc_jbjg_dphi:<br/>
+    <a name="evtb-inc_jbjg_dphi"><a href="inc_jbjg_dphi.pdf">
+      <img src="inc_jbjg_dphi.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_jbjg_dr" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_jbjg_dr">&#9875;</a><a href="inc_jbjg_dr.py">&#8984;</a><a href="inc_jbjg_dr__data.py">&#128202;</a> inc_jbjg_dr:<br/>
+    <a name="evtb-inc_jbjg_dr"><a href="inc_jbjg_dr.pdf">
+      <img src="inc_jbjg_dr.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_jg_e" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_jg_e">&#9875;</a><a href="inc_jg_e.py">&#8984;</a><a href="inc_jg_e__data.py">&#128202;</a> inc_jg_e:<br/>
+    <a name="evtb-inc_jg_e"><a href="inc_jg_e.pdf">
+      <img src="inc_jg_e.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_jg_pt" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_jg_pt">&#9875;</a><a href="inc_jg_pt.py">&#8984;</a><a href="inc_jg_pt__data.py">&#128202;</a> inc_jg_pt:<br/>
+    <a name="evtb-inc_jg_pt"><a href="inc_jg_pt.pdf">
+      <img src="inc_jg_pt.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_t_e" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_t_e">&#9875;</a><a href="inc_t_e.py">&#8984;</a><a href="inc_t_e__data.py">&#128202;</a> inc_t_e:<br/>
+    <a name="evtb-inc_t_e"><a href="inc_t_e.pdf">
+      <img src="inc_t_e.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_t_pt" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_t_pt">&#9875;</a><a href="inc_t_pt.py">&#8984;</a><a href="inc_t_pt__data.py">&#128202;</a> inc_t_pt:<br/>
+    <a name="evtb-inc_t_pt"><a href="inc_t_pt.pdf">
+      <img src="inc_t_pt.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_t_y" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_t_y">&#9875;</a><a href="inc_t_y.py">&#8984;</a><a href="inc_t_y__data.py">&#128202;</a> inc_t_y:<br/>
+    <a name="evtb-inc_t_y"><a href="inc_t_y.pdf">
+      <img src="inc_t_y.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_tjb_dphi" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_tjb_dphi">&#9875;</a><a href="inc_tjb_dphi.py">&#8984;</a><a href="inc_tjb_dphi__data.py">&#128202;</a> inc_tjb_dphi:<br/>
+    <a name="evtb-inc_tjb_dphi"><a href="inc_tjb_dphi.pdf">
+      <img src="inc_tjb_dphi.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_tjb_m" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_tjb_m">&#9875;</a><a href="inc_tjb_m.py">&#8984;</a><a href="inc_tjb_m__data.py">&#128202;</a> inc_tjb_m:<br/>
+    <a name="evtb-inc_tjb_m"><a href="inc_tjb_m.pdf">
+      <img src="inc_tjb_m.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_tjb_pt" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_tjb_pt">&#9875;</a><a href="inc_tjb_pt.py">&#8984;</a><a href="inc_tjb_pt__data.py">&#128202;</a> inc_tjb_pt:<br/>
+    <a name="evtb-inc_tjb_pt"><a href="inc_tjb_pt.pdf">
+      <img src="inc_tjb_pt.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_tjg_deta" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_tjg_deta">&#9875;</a><a href="inc_tjg_deta.py">&#8984;</a><a href="inc_tjg_deta__data.py">&#128202;</a> inc_tjg_deta:<br/>
+    <a name="evtb-inc_tjg_deta"><a href="inc_tjg_deta.pdf">
+      <img src="inc_tjg_deta.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_tjg_dphi" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_tjg_dphi">&#9875;</a><a href="inc_tjg_dphi.py">&#8984;</a><a href="inc_tjg_dphi__data.py">&#128202;</a> inc_tjg_dphi:<br/>
+    <a name="evtb-inc_tjg_dphi"><a href="inc_tjg_dphi.pdf">
+      <img src="inc_tjg_dphi.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_inc_tjg_dr" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-inc_tjg_dr">&#9875;</a><a href="inc_tjg_dr.py">&#8984;</a><a href="inc_tjg_dr__data.py">&#128202;</a> inc_tjg_dr:<br/>
+    <a name="evtb-inc_tjg_dr"><a href="inc_tjg_dr.pdf">
+      <img src="inc_tjg_dr.png">
+    </a></a>
+  </div>
+  <div class="plot" id="plot_incall" style="float:left; font-size:smaller; font-weight:bold;">
+    <a href="#evtb-incall">&#9875;</a><a href="incall.py">&#8984;</a><a href="incall__data.py">&#128202;</a> incall:<br/>
+    <a name="evtb-incall"><a href="incall.pdf">
+      <img src="incall.png">
+    </a></a>
+  </div>
+</section>
+
+<footer>
+<p id="timestamp">Generated at Tuesday, 16. April 2024 01:54PM</p>
+</footer>
+
+</body>
+</html>
